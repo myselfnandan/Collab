@@ -1,10 +1,9 @@
-import PrivacyComp from "../../Components/PrivacyComp.jsx";
+'use client'
 
 const PrivacyPolicy = () => {
   return (
     <>
-    <PrivacyComp/>
-      <div className="p-4 md:p-8 lg:p-12 bg-gray-100">
+      <div className="p-4 md:p-8 lg:p-12 bg-gray-100 mt-[10vh]">
         <h2 className="text-2xl font-bold mb-4 text-black">Rules</h2>
         <ul className="list-disc list-inside space-y-4 text-black">
           <li>We may collect the following types of information:</li>
@@ -25,7 +24,7 @@ const PrivacyPolicy = () => {
 
           <p className="font-semibold">We use the information we collect for the following purposes:</p>
           <ol className="list-decimal list-inside ml-6 space-y-2">
-            <li>To register you for our bootcamp and any subsequent courses.</li>
+            <li>To register you for our DSA Course and any subsequent courses.</li>
             <li>To communicate with you regarding your registration, course materials, and updates.</li>
             <li>To process payments for any paid courses.</li>
             <li>To improve our services and enhance your experience.</li>

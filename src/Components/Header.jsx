@@ -5,7 +5,7 @@ import { useState } from 'react';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const menuItems = ['Home', 'About', 'Course','Get Started'];
+  const menuItems = ['Home'];
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const closeMenu = () => setMenuOpen(false);

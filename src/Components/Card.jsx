@@ -5,62 +5,54 @@ const Card = () => {
   const cardData = [
     {
       id: 1,
-      title: "Project Building",
+      title: "Crash Course",
+      info:[
+        "Online: 399/- only || Offline And Online: 849/- only",
+      ],
       description: [
         "Guidance - Expert mentors to guide you throughout process",
         "Resources - Access to tools, templates, and learning materials.",
-        "Frameworks - Training in popular tech stacks and frameworks.",
         "Collaboration - Opportunities to work with peers in teams.",
         "Support - Continuous feedback and assistance.",
+        "Core Topics Only- Focus on essential concepts that provide maximum value in a short time.",
+        "Evaluate Progress - Conduct mini-tests to ensure learners grasp the material."
+        
       ],
-      list: "87+ students waiting",
-      author: "Piyush",
-      date: "Launching Soon",
-      image: "/Teamwork-cuate.svg",
+      list: "87+ Students enrolled",
+      author: "VR Academics",
+      date: "February 1",
+      image: "/crashcourse.jpg",
       designation: "Course Info",
     },
     {
       id: 2,
-      title: "Frontend Development Course",
-      description: [
-        "Design - Learn to create visually appealing layouts with HTML CSS.",
-        "JavaScript - Add interactivity to your web apps.",
-        "Frameworks - Dive into React, Vue.js, or Angular and build responsive designs.",
-        "Animations - Enhance user experience with engaging effects.",
-        "Optimization - Improve page performance and speed.",
-        "Deployment - Host and launch beautiful web apps",
+      title: "DSA Mastery",
+      info:[
+        "Course Fees: 4999/- only",
       ],
-      list: "129+ students waiting",
-      author: "Code Latent Team",
-      date: "Launching Soon",
-      image: "/Codingworkshop-amico.svg",
-      designation: "Course Info",
-    },
-    {
-      id: 3,
-      title: "Backend Development Course",
       description: [
-        "Databases - Manage data with SQL or NoSQL.",
-        "Authentication - Implement secure login systems and Learn server-side architecture and hosting.",
-        "Languages - Java (A versatile, platform-independent programming language renowned for its robustness, scalability)",
-        "Frameworks - Spring Boot (A powerful Java framework that simplifies building production-ready applications by providing pre-configured settings)",
+        "Comprehensive DSA Curriculum - Step-by-step guidance on mastering core Data Structures",
+        "Interactive Learning Modules - Hands-on coding challenges to reinforce learning.",
+        "Live Problem-Solving Sessions - Focus on understanding and analyzing time and space complexities.",
+        "Personalized Mentorship - Tailored learning plans based on individual strengths",
+        "Progress Tracking - Milestone-based achievements to keep you motivated.",
       ],
-      list: "197+ students waiting",
+      list: "129+ Students enrolled",
       author: "Code Latent Team",
-      date: "Launching Soon",
-      image: "/Handcoding-bro.svg",
+      date: "February 15",
+      image: "/dsacourse.jpg",
       designation: "Course Info",
     },
   ];
 
   return (
     <div className="p-4 bg-white">
-      <p className="font-bold text-2xl mb-8 text-center mt-7">Upcoming Projects</p>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:px-5 sm:mb-7">
+      <p className="font-bold text-2xl mb-8 text-center mt-7">Our Courses</p>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 md:px-5 sm:mb-7">
         {cardData.map((card) => (
           <div
             key={card.id}
-            className="bg-white border rounded-lg shadow-md overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-105"
+            className="bg-white border rounded-lg shadow-md overflow-hidden cursor-pointer transform transition-all duration-300"
           >
             {/* Updated to use next/image */}
             <CustomImage
@@ -68,7 +60,7 @@ const Card = () => {
               alt={card.title}
               width={500}
               height={300}
-              className="w-full h-48 object-contain bg-gray-100"
+              className="w-full h-49 object-contain bg-gray-100"
             />
             <div className="p-4">
               <p className="text-sm text-gray-500 font-semibold mb-2">
@@ -84,6 +76,9 @@ const Card = () => {
                     {point}
                   </li>
                 ))}
+              </ul>
+              <ul className="list-none mb-5">
+                {card.info}
               </ul>
               <div className="flex items-center gap-2 mb-7">
                
@@ -114,9 +109,8 @@ const Card = () => {
                 {/* Action button */}
                 <button
                   className="absolute bottom-4 right-4 bg-black text-white py-2 px-4 rounded-lg hover:bg-white hover:text-black hover:border-black hover:border-2 focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50"
-                  onClick={() => alert(`You joined the waitlist for ${card.title}!`)}
                 >
-                  Join Waitlist
+                  Enroll Now
                 </button>
               </div>
             </div>

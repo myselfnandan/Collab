@@ -3,9 +3,7 @@
 import { useRef, useEffect } from "react";
 import Link from "next/link";
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import SelectionPage from "../app/SelectionPage/page";
-import { CustomImage } from '../Components/image'
-
+import { CustomImage } from '../Components/image';
 
 
 function CourseSec() {
@@ -80,7 +78,7 @@ function CourseSec() {
           </div>
 
           <div className="mt-6 md:mt-[4rem]">
-            <Link href="/SelectionPage">
+            <Link href="/selectionpage">
               <button className="inline-block px-6 md:px-8 py-3 md:py-4 w-44 md:w-52 bg-blue-500 text-white font-bold rounded-lg hover:bg-blue-700 transition duration-300">
                 Start Now
               </button>
@@ -246,7 +244,7 @@ function CourseSec() {
                 <span>Practical Projects</span>
               </li>
             </ul>
-            <Link href="/SelectionPage"className="px-6 py-2 bg-blue-500 text-white font-bold rounded-lg">
+            <Link href="/selectionpage"className="px-6 py-2 bg-blue-500 text-white font-bold rounded-lg">
                 Enroll Now
             </Link>
           </div>

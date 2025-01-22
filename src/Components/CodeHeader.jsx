@@ -7,12 +7,6 @@ import Link from 'next/link';
 import { CustomImage } from '../Components/image'
 import { usePathname } from 'next/navigation';
 
-const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'About Us', href: '/about' },
-  { name: 'Course', href: '/course' },
-  { name: 'Get Started', href: '/bootcamp' },
-];
 
 export default function CodeHeader() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -26,8 +20,12 @@ export default function CodeHeader() {
       <header className="bg-gradient-to-r from-blue-900 to-purple-900 fixed top-0 left-0 w-full z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
-            <span className="text-[1.7em] font-semibold text-blue-200">
+            <span className="lg:text-[1.7em] font-semibold text-blue-200 sm:text-[1.4rem]">
               Code<span className="text-[#e45f2b]">Latent</span>
+            </span>
+            <span className="lg:text-[1.7em] font-semibold text-blue-200 pl-2 sm:text-[1.4rem]">
+               <span className="text-[1rem]">X </span><span className="text-[#e45f2b]">VR</span>
+               Academics
             </span>
           </div>
           <div className="flex lg:hidden">
@@ -41,11 +39,6 @@ export default function CodeHeader() {
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
-              <Link key={item.name} href={item.href} className="font-semibold text-xl text-blue-200">
-                {item.name}
-              </Link>
-            ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a href="https://codelatent.fermion.app/login" className="text-sm font-semibold text-blue-200">
@@ -78,17 +71,6 @@ export default function CodeHeader() {
             </div>
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-500/10">
-                <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
-                    <Link
-                      key={item.name}
-                      href={item.href}
-                      className="-mx-3 block rounded-2xl px-3 py-2 text-base font-semibold text-blue-200 hover:border-blue-200 hover:border-b-2"
-                    >
-                      {item.name}
-                    </Link>
-                  ))}
-                </div>
                 <div className="py-6">
                   <a
                     href="https://codelatent.fermion.app/login"
