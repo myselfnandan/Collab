@@ -4,6 +4,7 @@ import Link from "next/link";
 import { CustomImage } from '../Components/image'
 import Card from "../Components/Card";
 import Instructors from "../Components/Instuctors";
+import Card2 from "../Components/Card2";
 const Home = () => {
 
   return (
@@ -40,6 +41,7 @@ const Home = () => {
         </div>
       </div>
       <Card/>
+      <Card2/>
       <Instructors/>
     </div>
   );

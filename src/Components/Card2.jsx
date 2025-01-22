@@ -1,34 +1,34 @@
 'use client';
 
 import { CustomImage } from '../Components/image'
-const Card = () => {
+import Link from 'next/link';
+
+
+const Card2 = () => {
   const cardData = [
     {
-      id: 1,
-      title: "Crash Course",
+      id: 2,
+      title: "DSA Mastery",
       info:[
-        "Online: 399/- only || Offline And Online: 849/- only",
+        "Course Fees: 4999/- only",
       ],
       description: [
-        "Guidance - Expert mentors to guide you throughout process",
-        "Resources - Access to tools, templates, and learning materials.",
-        "Collaboration - Opportunities to work with peers in teams.",
-        "Support - Continuous feedback and assistance.",
-        "Core Topics Only- Focus on essential concepts that provide maximum value in a short time.",
-        "Evaluate Progress - Conduct mini-tests to ensure learners grasp the material."
-        
+        "Comprehensive DSA Curriculum - Step-by-step guidance on mastering core Data Structures",
+        "Interactive Learning Modules - Hands-on coding challenges to reinforce learning.",
+        "Live Problem-Solving Sessions - Focus on understanding and analyzing time and space complexities.",
+        "Personalized Mentorship - Tailored learning plans based on individual strengths",
+        "Progress Tracking - Milestone-based achievements to keep you motivated.",
       ],
-      list: "87+ Students enrolled",
-      author: "VR Academics",
-      date: "February 1",
-      image: "/crashcourse.jpg",
+      list: "129+ Students enrolled",
+      author: "Code Latent Team",
+      date: "February 15",
+      image: "/dsacourse.jpg",
       designation: "Course Info",
-    }
+    },
   ];
 
   return (
     <div className="p-4 bg-white">
-      <p className="font-bold text-3xl mb-10 text-center mt-7">Our Courses</p>
       <div className="flex flex-col lg:flex-row items-center gap-12 max-w-3xl mx-auto pb-10">
         {cardData.map((card) => (
           <div
@@ -76,7 +76,7 @@ const Card = () => {
               <div className="flex items-center gap-3">
                 {/* Author image */}
                 <CustomImage
-                  src="/vrlogo.jpg"
+                  src="/code-lint-jpg-logo.jpg"
                   alt={card.author}
                   width={40}
                   height={40}
@@ -88,11 +88,13 @@ const Card = () => {
                 </div>
 
                 {/* Action button */}
+                <Link href="https://codelatent.fermion.app/course">
                 <button
                   className="absolute bottom-4 right-4 bg-black text-white py-2 px-4 rounded-lg hover:bg-white hover:text-black hover:border-black hover:border-2 focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50"
                 >
                   Enroll Now
                 </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -102,4 +104,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Card2;
