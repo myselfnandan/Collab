@@ -6,7 +6,7 @@ import { CustomImage } from '../Components/image'
 const Footer = () => {
   return (
     <footer className="bg-custom p-4 text-center text-blue-200">
-      <p className="pb-3 text-black text-sm">© 2025 codelatent.com</p>
+      <p className="pb-3 text-black text-sm">Powered by Codelatent</p>
       <div className="flex justify-center gap-4">
         <Link
           href="https://www.instagram.com/codelatent?igsh=d24zcHo0ODB1MG1l"

@@ -4,7 +4,7 @@ import { Users, Award, Star } from 'lucide-react';
 const stats = [
   {
     icon: <Users className="w-5 h-5" />,
-    value: "800+",
+    value: "2000+",
     label: "Students Taught"
   },
   {
@@ -14,7 +14,7 @@ const stats = [
   },
   {
     icon: <Star className="w-5 h-5" />,
-    value: "4.8/5",
+    value: "4.9/5",
     label: "Average Rating"
   }
 ];

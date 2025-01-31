@@ -1,13 +1,15 @@
 'use client';
 
 import { CustomImage } from '../Components/image'
+import Link from 'next/link';
+
 const Card = () => {
   const cardData = [
     {
       id: 1,
       title: "Crash Course",
       info:[
-        "Online: 399/- only || Offline And Online: 849/- only",
+        "Online: 599/- only || Offline And Online: 849/- only",
       ],
       description: [
         "Guidance - Expert mentors to guide you throughout process",
@@ -88,11 +90,13 @@ const Card = () => {
                 </div>
 
                 {/* Action button */}
+                <Link href="/redirect">
                 <button
                   className="absolute bottom-4 right-4 bg-black text-white py-2 px-4 rounded-lg hover:bg-white hover:text-black hover:border-black hover:border-2 focus:outline-none focus:ring-2 focus:ring-black focus:ring-opacity-50"
                 >
                   Enroll Now
                 </button>
+                </Link>
               </div>
             </div>
           </div>
