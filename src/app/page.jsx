@@ -23,16 +23,11 @@ const Home = () => {
               </span>
             </h1>
             <p className="mt-2 text-lg font-medium text-blue-200 mb-8 max-w-2xl animate-fade-in">
-              {`Experience a revolutionary way of learning Data Structures and Algorithms (DSA) with our unique partnership. Combining the robust curriculum of Codelatent with the immersive technology of VR Academics, we aim to take your learning to the next level.`}
+              {`VR Academics is offering a fast-track crash course tailored specifically for 12th CBSE students aiming to master accounting concepts in a short time. Designed to help students understand core accounting principles quickly, this course focuses on key topics from the CBSE curriculum, ensuring that students are well-prepared for their board exams. Combining the robust curriculum of Codelatent with the immersive technology of VR Academics, we aim to take your learning to the next level.`}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
               {/* Updated Link Component without <a> */}
-              <Link
-                href="/about"
-                className="text-sm font-semibold text-blue-200"
-              >
-                Learn more →
-              </Link>
+              
             </div>
           </div>
           <div className="flex items-center justify-center h-auto max-w-2xl text-blue-200">
