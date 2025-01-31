@@ -1,6 +1,5 @@
 'use client';
 
-import Link from "next/link";
 import { CustomImage } from '../Components/image'
 import Card from "../Components/Card";
 import Instructors from "../Components/Instuctors";
@@ -26,7 +25,6 @@ const Home = () => {
               {`VR Academics is offering a fast-track crash course tailored specifically for 12th CBSE students aiming to master accounting concepts in a short time. Designed to help students understand core accounting principles quickly, this course focuses on key topics from the CBSE curriculum, ensuring that students are well-prepared for their board exams. Combining the robust curriculum of Codelatent with the immersive technology of VR Academics, we aim to take your learning to the next level.`}
             </p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              {/* Updated Link Component without <a> */}
               
             </div>
           </div>
