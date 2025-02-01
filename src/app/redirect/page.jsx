@@ -39,11 +39,11 @@ const redirect=()=>{
         {/*Emi card*/}
         <section className="pricing py-10">
         <div className="price-card mx-auto p-6 bg-white shadow-lg rounded-lg w-80 text-center">
-            <p className="text-sm font-bold mb-1">Offline And Online</p>
-            <h3 className="text-xl font-bold mb-4">Access Both Online & Offline Versions</h3>
+            <p className="text-sm font-bold mb-1">Offline</p>
+            <h3 className="text-xl font-bold mb-4">Access Offline Versions</h3>
             <div className="price text-3xl font-bold text-indigo-600 mb-2">₹849</div>
             <div className="cut-price text-gray-500 line-through mb-4">₹999</div>
-            <p className="mb-4 text-sm">you can access both online and offline versions of the course
+            <p className="mb-4 text-sm">you can access offline versions of the course
             </p>
             <ul className="text-left mb-8">
               <li className="flex items-center mb-2">

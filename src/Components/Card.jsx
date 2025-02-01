@@ -9,7 +9,7 @@ const Card = () => {
       id: 1,
       title: "Crash Course",
       info:[
-        "Online: 599/- only || Offline And Online: 849/- only",
+        "Online: 599/- only || Offline: 849/- only",
       ],
       description: [
         "Guidance - Expert mentors to guide you throughout process",
